@@ -1,0 +1,33 @@
+@mixin texto-parrafos{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    color: white;
+}
+
+@mixin estilosDeTexto($fuente, $size , $color, $grosor){
+    font-family: $fuente;
+    font-size: $size;
+    color: $color;
+    font-weight: $grosor;
+}
+
+main{
+    section{
+
+        .parrafos{
+            background-color: red;
+
+            p{
+                @include estilosDeTexto(Arial, 3rem, black, bold);
+            }
+
+            .parrafo-2{
+                @include estilosDeTexto( Tribuchet, 17px , yellow , light )
+            }
+        }
+    }
+}
+
+
+
+

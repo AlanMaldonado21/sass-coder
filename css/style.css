@@ -1,0 +1,151 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #1A1A1A;
+}
+
+/*
+
+    Comentario multilinea
+
+*/
+.anuncio {
+  background-color: yellow;
+  padding: 15px;
+}
+.anuncio p {
+  text-align: center;
+  font-family: Arial, Hßelvetica, sans-serif;
+}
+.anuncio p span {
+  font-weight: bold;
+}
+
+header {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid gray;
+}
+header nav {
+  display: none;
+}
+header .boton-plataforma a {
+  display: none;
+}
+header .boton-plataforma img {
+  width: 40px;
+}
+
+main section #titulo-coder {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 15px;
+  margin-bottom: 35px;
+}
+main section .container-botones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main section .container-botones .boton-amarillo, main section .container-botones .boton-dos {
+  background-color: yellow;
+  padding: 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+main section .container-botones .boton-dos {
+  background-color: #1A1A1A;
+  border: 1px solid yellow;
+  margin: 15px;
+  color: white;
+}
+
+.section-historia .card {
+  background-color: red;
+}
+.section-historia .card .card-body h5 {
+  color: violet;
+}
+.section-historia .card .card-body p {
+  color: black;
+}
+.section-historia .card .card-body a {
+  background-color: yellow;
+  color: black;
+  border: 0px;
+}
+
+footer {
+  background-color: yellow;
+}
+footer p {
+  text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    background-color: red;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header {
+    align-items: center;
+  }
+  header nav {
+    display: block;
+  }
+  header nav ul {
+    list-style-type: none;
+    display: flex;
+  }
+  header nav ul li {
+    margin: 5px;
+  }
+  header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica;
+    transition: 1s;
+  }
+  header nav ul li a:hover {
+    color: yellow;
+    margin: 15px;
+  }
+  header .boton-plataforma {
+    display: flex;
+    align-items: center;
+  }
+  header .boton-plataforma a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica;
+    margin-right: 15px;
+  }
+}
+main section .parrafos {
+  background-color: red;
+}
+main section .parrafos p {
+  font-family: Arial;
+  font-size: 3rem;
+  color: black;
+  font-weight: bold;
+}
+main section .parrafos .parrafo-2 {
+  font-family: Tribuchet;
+  font-size: 17px;
+  color: yellow;
+  font-weight: light;
+}
+
+/*# sourceMappingURL=style.css.map */
